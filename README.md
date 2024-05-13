@@ -12,9 +12,9 @@ Files:
 preprocessing.py: Python script for extracting audio features and storing them in MongoDB.
 
 Phase 2: Music Recommendation Model
-In this phase, Apache Spark is utilized to train a music recommendation model. The model uses ALS Model for enhanced accuracy. The tasks include:
+In this phase, Apache Spark is utilized to train a music recommendation model. The model now uses the K-Means clustering algorithm for enhanced accuracy. The tasks include:
 
-1) Training a recommendation model using Apache Spark's MLlib
+1) Training a recommendation model using Apache Spark's MLlib with the K-Means clustering algorithm.
 2) Evaluating the model's performance using relevant metrics.
 3) Saving the trained model for future use.
 
@@ -38,7 +38,7 @@ Through a series of phases, the project successfully accomplished the following 
 
 Phase 1: Established an Extract, Transform, Load (ETL) pipeline to extract audio features from the Free Music Archive (FMA) dataset, transform them into numerical formats, and store them in a scalable MongoDB database.
 
-Phase 2: Utilized Apache Spark to train a music recommendation model, employing ALS algorithm for accurate recommendations. The model's performance was evaluated using relevant metrics, and the trained model was saved for future use.
+Phase 2: Utilized Apache Spark to train a music recommendation model, employing K-Means algorithm for accurate recommendations. The model's performance was evaluated using Silhouette Score, and the trained model was saved for future use.
 
 Phase 3: Developed an interactive music streaming web application with a user-friendly interface using Flask. Real-time music recommendations were generated using Apache Kafka, leveraging historical playback data to tailor suggestions dynamically.
 
