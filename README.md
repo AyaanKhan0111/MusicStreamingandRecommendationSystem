@@ -2,7 +2,7 @@
 
 This project aims to develop a streamlined alternative to Spotify, featuring a music recommendation system, playback, and streaming capabilities, alongside real-time suggestions derived from user activity. The project is divided into several phases, each with its specific tasks and objectives.
 
-Phase 1: Extract, Transform, Load (ETL) Pipeline
+## Phase 1: Extract, Transform, Load (ETL) Pipeline
 The first phase involves creating an Extract, Transform, Load (ETL) pipeline utilizing the Free Music Archive (FMA) dataset. This dataset comprises over 100,000 tracks spanning various genres. The tasks in this phase include:
 
 Extracting audio features from the FMA dataset, such as Mel-Frequency Cepstral Coefficients (MFCC), spectral centroid, and zero-crossing rate.
@@ -11,7 +11,7 @@ Storing the transformed audio features in a scalable and accessible manner using
 Files:
 preprocessing.py: Python script for extracting audio features and storing them in MongoDB.
 
-Phase 2: Music Recommendation Model
+## Phase 2: Music Recommendation Model
 In this phase, Apache Spark is utilized to train a music recommendation model. The model now uses the K-Means clustering algorithm for enhanced accuracy. The tasks include:
 
 1) Training a recommendation model using Apache Spark's MLlib with the K-Means clustering algorithm.
@@ -20,7 +20,7 @@ In this phase, Apache Spark is utilized to train a music recommendation model. T
 
 Files:
 model.py: Python script for training a music recommendation model using Apache Spark.
-Phase 3: Deployment
+## Phase 3: Deployment
 The deployment phase involves building an interactive music streaming web application. The application dynamically generates music recommendations for users in real-time using Apache Kafka. The tasks include:
 
 1) Developed a user-friendly web interface using frameworks like Flask.
@@ -31,7 +31,7 @@ producer.py: Python script for generating real-time music recommendations using 
 app.py: Flask application for streaming music and displaying recommendations.
 
 
-Conclusion
+## Conclusion
 This project aimed to create a personalized music streaming experience akin to Spotify, incorporating a music recommendation system, playback, and streaming capabilities.
 
 Through a series of phases, the project successfully accomplished the following key objectives:
@@ -44,4 +44,4 @@ Phase 3: Developed an interactive music streaming web application with a user-fr
 
 By seamlessly integrating data processing, machine learning, real-time streaming, and web development technologies, this project showcases a holistic approach to building a personalized music streaming platform. Through continuous learning and adaptation to user feedback, the platform aims to provide a rich and engaging music discovery experience tailored to each user's preferences.
 
-In summary, this project demonstrates the potential of leveraging advanced technologies to create innovative solutions in the realm of digital music streaming, offering users a unique and personalized music listening experience.
+In summary, this project demonstrates the potential of leveraging advanced technologies to create innovative solutions in the realm of digital music streaming, offering users a unique and personalized music listening experience
